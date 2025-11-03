@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | 은애 손</title>
-  <link rel="stylesheet" href="../style.css" />
-  <script defer src="../script.js"></script>
+  <link rel="stylesheet" href="../style/style.css">
+  <script defer src="../script/script.js"></script>
 </head>
 <body>
-  <header>
+  <header class="navbar">
+    <div class="logo">Enae</div>
     <nav>
       <a href="/test/">Home</a>
       <a href="/test/about/">About</a>
@@ -16,17 +17,15 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="이름" required />
-        <input type="email" placeholder="이메일" required />
-        <textarea placeholder="메시지를 입력하세요..." required></textarea>
-        <button type="submit" class="btn">보내기</button>
-      </form>
-      <p id="formMessage" class="hidden">메시지가 전송되었습니다 😊</p>
-    </section>
+  <main class="contact-section">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="이름" required>
+      <input type="email" placeholder="이메일" required>
+      <textarea placeholder="메시지를 입력해주세요..." required></textarea>
+      <button type="submit" class="cta-btn">보내기</button>
+    </form>
+    <p id="formMessage" class="hidden">메시지가 전송되었습니다 💌</p>
   </main>
 
   <footer>

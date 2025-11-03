@@ -7,120 +7,118 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  background: #f8faff;
+  font-family: 'Poppins', 'Apple SD Gothic Neo', sans-serif;
+  background-color: #fff;
+  color: #1c1c1e;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  letter-spacing: -0.2px;
 }
 
-header {
-  background: white;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem;
   position: sticky;
   top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e5e5e5;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #007aff;
 }
 
 nav a {
   text-decoration: none;
-  color: #007bff;
+  color: #1c1c1e;
+  margin-left: 2rem;
   font-weight: 500;
-  transition: 0.2s;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #0056d2;
+  color: #007aff;
 }
 
+/* HERO SECTION */
 .hero {
   flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 4rem 2rem;
 }
 
-.hero-content {
-  max-width: 600px;
+.text-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1c1c1e;
 }
 
-.profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #007bff;
+.text-section p {
+  color: #555;
+  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  background: #007aff;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #005fcb;
+  transform: translateY(-2px);
+}
+
+/* ABOUT */
+.about-section {
+  flex: 1;
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #007aff;
+}
+
+.about-section p {
+  line-height: 1.7;
+  color: #333;
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 2rem;
-  color: #007bff;
-}
-
-p {
-  margin: 0.5rem 0 1.5rem;
-  line-height: 1.6;
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.btn, .btn-outline {
-  padding: 0.6rem 1.2rem;
-  border-radius: 30px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn {
-  background: #007bff;
-  color: white;
-}
-
-.btn:hover {
-  background: #0056d2;
-}
-
-.btn-outline {
-  border: 2px solid #007bff;
-  color: #007bff;
-}
-
-.btn-outline:hover {
-  background: #007bff;
-  color: white;
-}
-
-.container {
+/* CONTACT */
+.contact-section {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
 }
 
-.card {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
+.contact-section h2 {
+  font-size: 2rem;
+  color: #007aff;
+  margin-bottom: 1rem;
 }
 
 form {
@@ -131,26 +129,13 @@ form {
 }
 
 input, textarea {
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
   font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
   resize: none;
-}
-
-button.btn {
-  cursor: pointer;
-  border: none;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background: #f0f4ff;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.hidden {
-  display: none;
-}
+  height: 120p
